@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+      "SelectMeetingRoom": "../selectUtile/selectMeetingRoom_index/select"
+    },
+  "navigationBarTitleText": "工大数媒会议室预约"
+}

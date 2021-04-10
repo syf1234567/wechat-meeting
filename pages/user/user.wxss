@@ -1,0 +1,64 @@
+.container {
+  position: relative;
+  top: -90rpx !important;
+  background-color: rgb(31, 148, 234);
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: rgb(0, 0, 0);
+}
+
+.bodys {
+  position: relative;
+  top: -90rpx;
+}
+
+.bodys text {
+  position: relative;
+  left: 40rpx;
+}
+
+.number {
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+}
+.time {
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+}
+.money image {
+  width: 40rpx;
+  height: 40rpx;
+  position: relative;
+  margin-top: 15rpx;
+  right: -600rpx;
+}
+
+.btn {
+  width: 300rpx;
+  height: 40rpx;
+  margin-top: 60rpx;
+  position: relative;
+  left: 420rpx;
+}
+
+.hiding {
+  display: none;
+}
+
+/* .centleText{
+  position: relative;
+  left: 30rpx;
+} */

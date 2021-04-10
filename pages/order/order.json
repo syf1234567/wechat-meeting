@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "SelectMeetingRoom": "../selectUtile/selectMeetingRoom/select",
+    "SelectSatrtTime": "../selectUtile/selectSatrtTime/select",
+    "SelectEndTime": "../selectUtile/selectEndTime/select"
+  },
+  "navigationBarTitleText": "工大数媒会议室预约"
+}

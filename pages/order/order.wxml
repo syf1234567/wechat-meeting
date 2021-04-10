@@ -1,0 +1,22 @@
+<view class="body">
+  <image src='../../image/back.png' catchtap='back'></image>
+  <text class="message">请输入预约信息</text>
+  <form catchsubmit="formSubmit" catchreset="formReset">
+    <text>\n主持人：</text><input class="weui-input" name="host" placeholder="请输入主持人" />
+    <text>会议内容：</text><textarea auto-focus="true" style="height: 5em" name="contents" placeholder="请输入会议内容"/>
+    <text>参加人员：</text><textarea auto-focus="true" style="height: 5em" name="participants" placeholder="请输入参加人员"/>
+    <text>承办单位：</text><textarea auto-focus="true" style="height: 5em" name="organizer" placeholder="请输入承办单位"/>
+    <SelectMeetingRoom prop-array='{{selectMeetingRoom}}' bind:myget='setMeetingRoom'></SelectMeetingRoom>
+  <picker mode="date" value="{{day}}" start="{{startDay}}" end="{{endDay}}" bindchange="bindDateChange">
+    <view class="picker">选择日期: {{day}}</view>
+  </picker>
+    <SelectSatrtTime prop-array='{{selectTime}}' bind:myget='setStartTime'></SelectSatrtTime>
+    <SelectEndTime prop-array='{{selectTime}}' bind:myget='setEndTime'></SelectEndTime>
+    <text>\n\n</text>
+    <view class="btn-area">
+      <button type="primary" formType="submit">预约</button>
+      <button formType="reset">清空</button>
+    </view>
+   </form>
+</view>
+

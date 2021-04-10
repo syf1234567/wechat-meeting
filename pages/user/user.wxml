@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取个人信息 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+
+ <!-- <view class="bodys">
+    <view style='height:2px;width:100%;background:#efefef' class="line1"></view>
+    <view style='height:2px;width:100%;background:#efefef' class="line1"></view>
+    <view class='time'>
+      <text>预约时间段：{{is_order ? time : ""}}</text>
+    </view>
+ </view> -->

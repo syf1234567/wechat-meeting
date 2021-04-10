@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/update/update",
+    "pages/admin/admin",
+    "pages/order/order",
+    "pages/user/user",
+    "pages/login/login",
+    "pages/utils"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/order.png",
+        "selectedIconPath": "image/order_using.png",
+        "text": "预约"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "image/user.png",
+        "selectedIconPath": "image/user_using.png",
+        "text": "个人中心"
+      },
+      {
+        "pagePath": "pages/admin/admin",
+        "iconPath": "image/message.png",
+        "selectedIconPath": "image/message_using.png",
+        "text": "审核"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

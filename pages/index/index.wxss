@@ -1,0 +1,116 @@
+.head {
+  position: relative;
+  margin-bottom: 60rpx;
+}
+
+#logo {
+  width: 140rpx;
+  height: 140rpx;
+  position: relative;
+  left: 310rpx;
+}
+
+.line1 {
+  position: relative;
+}
+
+#position text{
+ position: relative;
+ left: 20px;
+ top: 10px;
+ display: inline;
+}
+
+.selectMeetingRoom {
+  position: relative;
+  left: 300rpx;
+  top: -30rpx;
+}
+
+#change {
+  position: relative;
+  top: 30rpx;
+  z-index: -1;
+}
+#change text {
+  position: absolute;
+  left: 20px;
+}
+
+#change image {
+  width: 25px;
+  height: 25px;
+}
+
+#useing {
+  position: absolute;
+  left: 110px;  
+}
+#useing text{
+  position: relative;
+  top: -10px;
+  left: 10px;
+  font-size: 14px;
+}
+
+#order {
+  position: absolute;
+  left: 200px;  
+}
+#order text{
+  position: relative;
+  top: -10px;
+  left: 10px;
+  font-size: 14px;
+}
+
+#use {
+  position: absolute;
+  left: 280px;  
+}
+#use text{
+  position: relative;
+  top: -10px;
+  left: 10px;
+  font-size: 14px;
+}
+
+.order_message {
+  font-size: 40rpx;
+  margin-left: 200rpx;
+}
+
+/* .orderBtn {
+  position: relative;
+  top: 1700rpx;
+} */
+.foot {
+  position: relative;
+  top: 1800rpx;
+}
+
+/* 表格 */
+.table {
+  border: 1px solid #dadada;
+  border-right: 0;
+  border-bottom: 0;
+  width: 100%;
+  position: absolute;
+  top: 360rpx;
+}
+.tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.th,.td {
+  padding: 10px;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  text-align: center;
+  width:100%
+}
+.th {
+  font-weight: 400;
+  background-color: #dadada
+}

@@ -1,0 +1,23 @@
+<view>
+  <view>
+    <text wx:if="{{hasUserInfo == false}}">请先进入个人中心授权</text>  
+  </view>
+  <block wx:if="{{isAdmin == false}}">
+    <view>
+      <text>您不是管理员，不进行审核</text>
+    </view>
+  </block> 
+    <block wx:else>
+      <block wx:for-items="{{unauditedList}}" wx:for-item="unaudited">
+        <view>
+          <text>主持人：{{unaudited.host}}\n</text>
+          <text>地点：{{unaudited.meetingroom}}\n</text>
+          <text>申请时间：{{unaudited.startTime}} - {{unaudited.endTime}}\n</text>
+          <text>会议内容：{{unaudited.contents}}\n</text>
+          <text>参加人员：{{unaudited.participants}}\n</text>
+          <text>承办单位：{{unaudited.organizer}}\n</text>
+          <button catchtap='unaudited' data-id='{{unaudited.id}}'>审核通过</button>
+        </view>
+      </block>
+  </block> 
+</view>

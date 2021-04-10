@@ -1,0 +1,66 @@
+<!--index.wxml-->
+<view>
+  <view style='height:40px' class='head'>
+    <!-- <image src='../../image/people.png' id='people'></image> -->
+    <image src='../../image/logo.png' id='logo'></image>
+    <!-- <image src='../../image/email.png' id='email'></image> -->
+  </view>
+
+  <view style='height:1px;width:100%;background:#efefef' class="line1"></view>
+
+  <view  id='position'>
+    <text>选择会议室：</text>
+    <SelectMeetingRoom prop-array='{{meetingRoomList}}' bind:myget='setMeetingRoom' class='selectMeetingRoom' ></SelectMeetingRoom>
+    <!-- <view class='select' catchtap='selectTap'>
+        <text class='select_text'>{{selectData[index]}}</text>
+    </view>
+      <view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+        <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}\n</text>
+  </view> -->
+  </view>
+  <view style='height:1px;width:100%;background:#efefef;top:45px;' class="line2"></view>
+
+
+  <view id='change'>
+    <text>状态</text>
+    <view id='useing'>
+      <image src='../../image/youren.png'></image>
+      <text>审核通过</text>
+    </view>
+    <view id='order'>
+      <image src='../../image/yuyue.png'></image>
+      <text>审核中</text>
+    </view>
+    <view id='use'>
+      <image src='../../image/wuren.png'></image>
+      <text>可用</text>
+    </view>
+  </view>
+
+  <view id='container'>
+    <view class="table">
+        <view class="tr">
+            <view class="th">  </view>
+            <view class="th">  </view>
+            <block wx:for-items="{{weekList}}" wx:for-item="week">
+              <view class="th">{{week}}</view>
+            </block>
+        </view>
+        <block wx:for-items="{{timeList}}" wx:for-item="time" wx:for-index="i">
+          <view class="tr">
+              <view class="td">{{time}}</view>
+              <block wx:for-items="{{orderArray}}" wx:for-item="orders" wx:for-index="j">
+                <view class="td" style="background:{{orderArray[j][i+8].success == true ? '#43681c' : orderArray[j][i+8].success == false ? '#fff496' : 'white'}}"></view>
+              </block>
+          </view>
+        </block>
+    </view>
+  </view>
+
+  <view class="foot">
+    <button wx:if="{{hasUserInfo && canIUse}}" style='background:#1f94f3' catchtap="orderBtn" class="orderBtn"><text style='color:white'>预约</text></button>
+    <block wx:else>
+      <text class="order_message" wx:if="{{!is_order}}" class="orderBtn">请先在个人中心授权</text>
+    </block>
+  </view>
+</view>

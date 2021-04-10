@@ -1,0 +1,11 @@
+image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.message{
+  position: absolute;
+  left: 220rpx;
+}
+
+ 
